@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDgAbqfmmSiGSeD2l1vwwUsUNJ267j8JcfQ_7r6PO-Vw&s=10) ;
+    /* background-image:url("https://images.unsplash.com/photo-1565895405138-6c3a1555da6a?w=1600"); */
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+.container{
+    width:100%;
+}
+
+h1{
+    text-align:center;
+    color:white;
+    font-size:45px;
+    margin-bottom:20px;
+    text-shadow:3px 3px 8px black;
+}
+
+.login{
+    width:380px;
+    margin:auto;
+    background:rgba(255,255,255,0.95);
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px black;
+}
+
+.login label{
+    display:block;
+    font-size:18px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.login input,
+.login select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.login input:focus,
+.login select:focus{
+    outline:none;
+    border:2px solid #ff6600;
+}
+
+.login button{
+    width:100%;
+    padding:12px;
+    margin-top:20px;
+    background:#ff6600;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.login button:hover{
+    background:#cc5200;
+}
+
+.login p{
+    text-align:center;
+    margin-top:15px;
+    font-size:16px;
+}
+
+.login a{
+    text-decoration:none;
+    color:#ff6600;
+    font-weight:bold;
+}
+
+.login a:hover{
+    text-decoration:underline;
+}
