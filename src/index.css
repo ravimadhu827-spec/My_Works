@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #164E32;
+    --color-primary-dark: #0F3824;
+    --color-primary-light: #2D6A4F;
+    --color-secondary: #EA580C;
+    --color-secondary-light: #F97316;
+    --color-accent: #CA8A04;
+    --color-accent-light: #EAB308;
+    --color-cream-bg: #FAF7F2;
+    --color-cream-card: #FFFFFF;
+    --color-cream-muted: #F3EFE6;
+    --color-text-main: #1C241F;
+    --color-text-muted: #536257;
+    --color-red-accent: #C1121F;
+  }
+
+  body {
+    background-color: var(--color-cream-bg);
+    color: var(--color-text-main);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.font-serif-indian {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4B5A5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #164E32;
+}
+
+/* Glass & Card effects */
+.food-card-shadow {
+  box-shadow: 0 4px 20px -2px rgba(22, 78, 50, 0.08), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+}
+.food-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.food-card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 32px -4px rgba(22, 78, 50, 0.14), 0 6px 12px -2px rgba(234, 88, 12, 0.08);
+}
