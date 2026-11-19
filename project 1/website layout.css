@@ -1,0 +1,46 @@
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+a{
+    text-align: none;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#left{
+    flex: 1;
+}
+#right{
+    flex: 1;
+}
+#right h3{
+    font-style: oblique;
+    font-size: 35px;
+    text-decoration: underline;
+    color: goldenrod;
+}
+#right p{
+    font-size: 30px;
+    font-style: italic;
+}
+button{
+    background-color: yellowgreen;
+    width: 295px;
+    height: 65px;
+}
+a:hover {
+    background-color: goldenrod;
+}
+#section1{
+    flex: 1;
+}
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: magenta;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://dk65js4pnk50x.cloudfront.net/Folder%201/1763634812_691eee7c459bc.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700PX;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: absolute;
+    width: 100%;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 350px;
+    margin: auto;
+    background-color: wheat;
+    padding: 20px;
+    margin-left: 100PX;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px black;
+}
+.login label{
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+h1{
+    text-align: left;
+    margin-left: 100px;
+}
+.login input{
+    width: 200px;
+    padding: 10px;
+    margin-top: 2px;
+    border-radius: 10px; 
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.login button{
+    margin-top: 5px;
+    margin-: 20px;
+    width: 300px;
+    padding: 12px;
+    color: white;
+    background-color: brown;
+    font-size: 25px;
+    border-radius: 8px;
+}
+.login button:hover{
+    color: brown;
+}  
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: wheat">Login Page</h1>
+
+        <form  class="login"action="home.html">
+
+        <lable forms="username">Enter name</lable>
+        <input type="text" placeholder="enter name">
+
+        <lable forms="">Order ID</lable>
+        <input type="NUMBER" placeholder="enter ID">
+
+        <lable forms="code">Enter Code</lable>
+        <input type="code" placeholder="enter code">
+        
+        <button type="submit">Register</button>
+        <button type="submit">Login</button>
+
+        <a href="reg.html">Your not Registered?</a>
+
+     </form>
+     </div>
+</body>
+</html>

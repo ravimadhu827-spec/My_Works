@@ -1,0 +1,539 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+.register-page {
+  min-height: 100vh;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(circle at 10% 10%, #dff1df, transparent 30%),
+    radial-gradient(circle at 90% 90%, #e7f3df, transparent 30%),
+    #f5f8f3;
+  font-family: "DM Sans", sans-serif;
+  color: #173d2c;
+}
+
+.register-page * {
+  box-sizing: border-box;
+}
+
+.register-layout {
+  width: min(1120px, 92%);
+  min-height: 750px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 12px;
+  background: white;
+  border: 1px solid #e6eee5;
+  border-radius: 28px;
+  box-shadow: 0 25px 80px rgba(31, 74, 45, 0.12);
+  overflow: hidden;
+  animation: registerAppear 0.7s ease;
+}
+
+@keyframes registerAppear {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* LEFT PANEL */
+
+.register-visual-panel {
+  position: relative;
+  min-width: 0;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  border-radius: 20px;
+  background:
+    radial-gradient(circle at 70% 55%, #d3ebc9, transparent 40%),
+    linear-gradient(145deg, #eaf5e6, #dcefd8);
+}
+
+.register-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #145438;
+  font-family: "Manrope", sans-serif;
+  font-size: 23px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.register-brand span {
+  width: 39px;
+  height: 39px;
+  display: grid;
+  place-items: center;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px #174c2915;
+}
+
+.register-visual-copy {
+  position: relative;
+  z-index: 2;
+  margin-top: 35px;
+}
+
+.register-small-label {
+  display: inline-block;
+  padding: 9px 13px;
+  color: #267247;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid #d7e9d3;
+  border-radius: 30px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.register-visual-copy h1 {
+  margin: 22px 0 15px;
+  color: #12452f;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(38px, 4.5vw, 54px);
+  line-height: 1.12;
+  letter-spacing: -2px;
+}
+
+.register-visual-copy p {
+  max-width: 350px;
+  color: #54715c;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.register-food-art {
+  position: relative;
+  width: 90%;
+  max-width: 370px;
+  margin: 15px auto;
+  animation: registerFloat 4s ease-in-out infinite;
+}
+
+@keyframes registerFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+.register-food-art img {
+  width: 100%;
+  height: 230px;
+  display: block;
+  object-fit: cover;
+  border: 7px solid rgba(255, 255, 255, 0.7);
+  border-radius: 35px;
+  box-shadow: 0 18px 40px rgba(39, 89, 47, 0.16);
+}
+
+.register-floating-card {
+  position: absolute;
+  right: -20px;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 18px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(26, 69, 37, 0.14);
+}
+
+.register-floating-card > span {
+  font-size: 27px;
+}
+
+.register-floating-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.register-floating-card strong {
+  color: #205d39;
+  font-size: 12px;
+}
+
+.register-floating-card small {
+  color: #849588;
+  font-size: 10px;
+}
+
+.register-visual-bottom {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.register-visual-bottom h2 {
+  margin: 0 0 7px;
+  color: #165638;
+  font-family: "Manrope", sans-serif;
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.register-visual-bottom p {
+  margin: 0;
+  color: #67806b;
+  font-size: 12px;
+}
+
+.register-decoration {
+  position: absolute;
+  color: rgba(47, 132, 73, 0.13);
+  pointer-events: none;
+}
+
+.decoration-one {
+  top: 40%;
+  right: 15px;
+  font-size: 85px;
+}
+
+.decoration-two {
+  left: 15px;
+  bottom: 20%;
+  font-size: 50px;
+}
+
+/* RIGHT PANEL */
+
+.register-form-panel {
+  min-width: 0;
+  padding: 35px 55px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.register-form-heading {
+  margin-bottom: 25px;
+}
+
+.register-welcome-icon {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 15px;
+  display: grid;
+  place-items: center;
+  background: #edf7ec;
+  border-radius: 13px;
+  font-size: 23px;
+}
+
+.register-top-label {
+  display: block;
+  margin-bottom: 9px;
+  color: #32905b;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+}
+
+.register-form-heading h2 {
+  margin: 0 0 8px;
+  color: #173e2c;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(25px, 3vw, 30px);
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.register-form-heading p {
+  margin: 0;
+  color: #89958b;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form > label {
+  margin-bottom: 7px;
+  color: #344d3c;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.register-input-wrap {
+  min-height: 47px;
+  margin-bottom: 16px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  background: #fbfdfb;
+  border: 1px solid #dfe9df;
+  border-radius: 11px;
+  transition: all 0.25s ease;
+}
+
+.register-input-wrap:focus-within {
+  background: white;
+  border-color: #39a36b;
+  box-shadow: 0 0 0 4px rgba(57, 163, 107, 0.1);
+}
+
+.register-input-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  color: #27734a;
+  background: #edf6ed;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.register-input-wrap input {
+  width: 100%;
+  min-width: 0;
+  height: 44px;
+  padding: 0;
+  color: #183d2d;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 12px;
+}
+
+.register-input-wrap input::placeholder {
+  color: #a5b0a7;
+}
+
+.register-password-toggle {
+  flex-shrink: 0;
+  padding: 7px;
+  color: #288451;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.register-submit {
+  width: 100%;
+  min-height: 51px;
+  margin-top: 7px;
+  color: white;
+  background: linear-gradient(110deg, #17633f, #15935b);
+  border: none;
+  border-radius: 11px;
+  box-shadow: 0 9px 20px rgba(21, 125, 73, 0.2);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  transition: all 0.25s ease;
+}
+
+.register-submit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 13px 25px rgba(21, 125, 73, 0.27);
+}
+
+.register-submit:disabled {
+  opacity: 0.65;
+  cursor: wait;
+  transform: none;
+}
+
+.register-message {
+  margin: 13px 0 0;
+  padding: 11px;
+  color: #245d3e;
+  background: #eff7ed;
+  border: 1px solid #dcecdc;
+  border-radius: 9px;
+  overflow-wrap: anywhere;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.register-divider {
+  margin: 22px 0 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.register-divider span {
+  height: 1px;
+  flex: 1;
+  background: #e8eee8;
+}
+
+.register-divider small {
+  color: #a0aaa2;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.register-login-text {
+  margin: 0;
+  color: #7d8a80;
+  text-align: center;
+  font-size: 12px;
+}
+
+.register-login-text a {
+  color: #18804d;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.register-login-text a:hover {
+  text-decoration: underline;
+}
+
+.register-security-note {
+  margin-top: 24px;
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  background: #f0f7ed;
+  border: 1px solid #e4efdf;
+  border-radius: 12px;
+}
+
+.register-security-note > span {
+  font-size: 22px;
+}
+
+.register-security-note p {
+  margin: 0;
+  color: #58745e;
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+.register-copyright {
+  margin: 18px 0 0;
+  color: #a0aaa2;
+  text-align: center;
+  font-size: 10px;
+}
+
+/* TABLET */
+
+@media (max-width: 850px) {
+  .register-layout {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+
+  .register-visual-panel {
+    padding: 27px;
+  }
+
+  .register-form-panel {
+    padding: 30px 28px;
+  }
+
+  .register-food-art img {
+    height: 190px;
+  }
+
+  .register-floating-card {
+    right: -10px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .register-page {
+    padding: 15px 0;
+  }
+
+  .register-layout {
+    width: 94%;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    border-radius: 20px;
+  }
+
+  .register-visual-panel {
+    padding: 25px 22px;
+    border-radius: 14px;
+  }
+
+  .register-brand {
+    font-size: 20px;
+  }
+
+  .register-visual-copy {
+    margin-top: 25px;
+  }
+
+  .register-visual-copy h1 {
+    font-size: 40px;
+  }
+
+  .register-visual-copy p {
+    font-size: 12px;
+  }
+
+  .register-food-art {
+    width: 75%;
+    margin: 20px auto;
+  }
+
+  .register-food-art img {
+    height: 180px;
+  }
+
+  .register-visual-bottom h2 {
+    font-size: 20px;
+  }
+
+  .register-form-panel {
+    padding: 28px 20px 22px;
+  }
+
+  .register-form-heading {
+    margin-bottom: 22px;
+  }
+
+  .register-form-heading h2 {
+    font-size: 25px;
+  }
+
+  .register-input-wrap {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .register-form-panel {
+    padding: 24px 14px;
+  }
+}
